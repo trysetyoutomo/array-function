@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS function</title>
+</head>
+<body>
+    <h1>Test Function</h1>    
+    <script>
+        let array_of_arrays = [[1, 2], [3, 4], [5, 6]];
+            const concatenated = array_of_arrays.reduce(function (previous, current) {
+                console.log("previous");
+                console.log(previous);
+                console.log("current");
+                console.log(current);
+                return previous.concat(current);
+            });
+            document.write("Reduce");
+            document.write("<br>");
+            document.write("=========================");
+            document.write("<br>")
+            document.write(JSON.stringify(array_of_arrays));
+            document.write("<br>")
+            document.write(JSON.stringify(concatenated));
+
+
+    </script>
+</body>
+</html>
